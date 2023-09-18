@@ -12,6 +12,8 @@ namespace arithmetic_operators
             Console.WriteLine(areab);
             bool modulusb = modulus(16, 4);
             Console.WriteLine(modulusb);
+            double pythag = pythagoras(10, 15);
+            Console.WriteLine(pythag);
         }
         static double circumf(double radius)
         {
@@ -35,6 +37,10 @@ namespace arithmetic_operators
                 return false;
             }
         }
-
+        static double pythagoras(double len1, double len2)
+        {
+            double hypotenuse = Math.Sqrt(len1 * len1 + len2 * len2);
+            return hypotenuse;
+        }
     }
 }
