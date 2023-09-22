@@ -14,6 +14,9 @@ namespace arithmetic_operators
             Console.WriteLine(modulusb);
             double pythag = pythagoras(10, 15);
             Console.WriteLine(pythag);
+            
+
+            
         }
         static double circumf(double radius)
         {
@@ -41,6 +44,23 @@ namespace arithmetic_operators
         {
             double hypotenuse = Math.Sqrt(len1 * len1 + len2 * len2);
             return hypotenuse;
+        }
+        static void bookPerStudent(int student, int books)
+        {
+            Console.WriteLine("each student gets: " + books / student);
+            Console.WriteLine(books % student + " books are left over");
+        }
+        //task 6
+        static int cacSpace(double size)
+        {
+            return (int)Math.Ceiling(size * 1024 / 512);
+        }
+        //task 7
+        static void cacSavings()
+        {
+            double earned = double.Parse(Console.ReadLine());
+            double savPercent = double.Parse(Console.ReadLine()) / 100;
+            Console.WriteLine("you save: " + 52.1429 * (earned * savPercent));
         }
     }
 }
